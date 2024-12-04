@@ -1,0 +1,121 @@
+:root {
+    --nav: #0084ff;
+    --bg: #e2edff;
+}
+
+section {
+    padding-top: 6rem;
+}
+
+/* Navbar Section */
+#navbar {
+    background-color: var(--nav);
+}
+
+/* Jumbotron Section */
+.jumbotron {
+    padding-top: 8rem;
+    background-color: var(--bg);
+}
+
+/* Projects Section */
+#projects {
+    background-color: var(--bg);
+}
+
+/* Gallery Section */
+#gallery .row > * {
+    padding: 0;
+}
+
+.gallery-img {
+    width: 100%;
+}
+
+/* Phone Section */
+#phone {
+    background-color: var(--bg);
+}
+
+#phone .phone-box {
+    position: relative;
+    background-color: #0084ff;
+    border-radius: 10px;
+    height: 500px;
+    overflow: hidden;
+}
+
+#phone .phone-box::before {
+    content: 'MY';
+    position: absolute;
+    color: white;
+    font-size: 6em;
+    font-weight: bold;
+    font-style: italic;
+    top: 13px;
+    left: -100px;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+#phone .phone-box:hover::before {
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.2;
+}
+
+#phone .phone-box::after {
+    content: 'PHONE';
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    font-weight: bold;
+    font-style: italic;
+    top: 350px;
+    left: 400px;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+#phone .phone-box:hover::after {
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0.2;
+}
+
+#phone .phone-box .phone-name {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+#phone .phone-box .phone-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#phone .phone-box .phone-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    max-width: 280px;
+    transition: 0.9s;
+}
+
+#phone .phone-box:hover .phone-img {
+    transform: translate(-50%, -50%) rotate(-3deg) scale(1.2);
+}
+
+/* Footer Section */
+footer {
+    background-color: var(--nav);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
